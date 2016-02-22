@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sun Feb 21 2016 00:54:23 GMT+0000 (UTC) -->
-<html data-wf-site="56c37a1c1610eb85439e8aee" data-wf-page="56c37a1c1610eb85439e8aef">
+<html>
 <head>
   <meta charset="utf-8">
   <title>Ocupacao de terras</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
+
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/ocupacao-de-terras.webflow.css">
@@ -19,8 +17,9 @@
     });
   </script>
   <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
-  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="https://rawgit.com/fatoonline/cracolandia-vertical/master/style-pessoal.css">
   <script src='http://www5.smartadserver.com/config.js?nwid=1527' type="text/javascript"></script>
   <script type="text/javascript">
@@ -28,6 +27,25 @@
   </script>
 </head>
 <body class="body">
+<header class="menu-header" style="position: fixed !important">
+    <nav id="hotsite">
+      <div class="bg-color">
+        <div class="menu container">
+          <ul class="menu-items">
+            <li id="politica"><a href="http://fatoonline.com.br/editoria/politica" target="_blank">Política</a></li>
+            <li id="economia"><a href="http://fatoonline.com.br/editoria/economia" target="_blank">Economia</a></li>
+            <li id="brasilia"><a href="http://fatoonline.com.br/editoria/brasilia" target="_blank">Brasília</a></li>
+            <li id="esporte"><a href="http://fatoonline.com.br/editoria/esportes" target="_blank">Esporte</a></li>
+            <li id="tv-fato" class="mg-fix"><a href="http://fatoonline.com.br/tv-fato" target="_blank">TV Fato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ico-menu">
+        <a id="menu-open" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        <a id="menu-close" href="#"><span class="glyphicon glyphicon-triangle-top"></span></a>
+      </div>
+    </nav>
+  </header>
   <div id="btn-side-menu" class="btn-menu">
     <div class="w-embed"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAD90lEQVR4Xu1bXVLbMBDWmvBceoKasfVcOEHpCQonIDlB4QSlJyCcgOQE0BM0nIDwLHlwT9D2OcLb+Rg546ROYsdO8E92Jg/J2Ir220/aXWmXxIbFdd2DTqfzSQhxZD8HROQKIfBJSsjMoRDijxBijI8x5iEMQ3zfmNAmRpZSHjHzORGdWKWL/M2YmUdENFRKAZhSpTQAYOn9/f1zIcRFinXLmjQY0p9MJsOymFEYAEvxr1CciA7K0nTZOMyMZdE3xtwUBaIQAJ7ngeb9bSk+DwqAYOaLIAiG6wK/FgCu67qdTufWrvF1/7u097BHGGN6YRhiieSS3AB4nndKRFB+K3TPqo1lQy8Igvus7+C5XAD4vn9NRNjkKivM3NdaX2adYGYApJS3Qohu1oHf+LmBUqqXZQ6ZAPB9/46ITrMMWJVnmPlea322aj4rAaiZ5ef1XcmEpQB4ntd3HAc+vrYSRdFNEAQL962FAGC3dxznrraaJyYeRdHZIu+QCoD1849Vc3XrGgMu0hhznBYnpALg+/7PqgQ56yqdEjWOtNaf53//DwApJVwdXF4TpaeUGiQVmwHAJjbPTaF+CguwFA6TCdQMAL7vXxHRtyaaPtaJmb9rra/i71MAmm79BAAzLJgC4Ps+8vnrJls/AcKl1rqP71MApJTPGzzJqRquoVLqcAoAzvCEEI9Vm+WG53OMM8ZXBjQh5M0LVhwivwIgpYT1wYLCopRamWAV+RMpJRd5P/HuWCl1TPY093dJg4oaASAmk8l7alLSk9eISJKoDcHPImAQFAGAeyL6khe9JjzPzD8AAK6dcHfXOmHmB2pZADRv5DEAKMut1JJBpQNQJzf4GgqXzYDWA1C3dQAvEBLRh7pNvIz5MvOvnRtscyAkhBjuQuHWJ0OtT4ftgQjKzz6WsbPWKA54Ukod7Y7ELAPafSgKENoUECEA0lq/luruLkbijc9ejSEsflfGZljVMZj5rzHGjS9Id5ejSUs1nQXz1p/ZA2IgWl0gEYPQxINSHIBqrdG/MCPLiqTGTdkQLfWPMhdJAaImJUm5y+RijjTh1njtQsnEpoiqKrTC1FHQZ7S0wDvTVXZNT41WKp/qBheZWUpZJyZkUj4XAHZjrHzx9Ko1n8kNLlvstmVmUDUXCVfHzN2NtswkEic0TQGEStwqI8gxxnS30jSVZAfCZvTovBUbYHX0MM3X/+ZxV5m8wLIBbQKFhgQUWm4llYbitnGy/6aNkymZJHwugNjIVRtOcqzig6KKx3MvzIA0dqDwMoqiruM4SD6KnjY/RVE0chwH/T/VbZ5etEywRPb29k6IaNo+j5LceZZY607b55l5/PLyMirL0ovm9w9vXw1OJ151EAAAAABJRU5ErkJggg==">
     </div>
