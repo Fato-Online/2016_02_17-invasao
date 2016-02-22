@@ -392,11 +392,11 @@
 
  @font-face {
         font-family: 'Stag';
-        src: url('https://rawgit.com/Fato-Online/2016_02_17-invasao/fonts/Stag-LightItalic.eot');
-        src: url('https://rawgit.com/Fato-Online/2016_02_17-invasao/fonts/Stag-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/fonts/Stag-LightItalic.svg') format('svg'),
-        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/fonts/Stag-LightItalic.woff') format('woff'),
-        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/fonts/Stag-LightItalic.ttf') format('truetype');
+        src: url('https://rawgit.com/Fato-Online/2016_02_17-invasao/blob/master/fonts/Stag-LightItalic.eot');
+        src: url('https://rawgit.com/Fato-Online/2016_02_17-invasao/blob/master/fonts/Stag-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/blob/master/fonts/Stag-LightItalic.svg') format('svg'),
+        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/blob/master/fonts/Stag-LightItalic.woff') format('woff'),
+        url('https://rawgit.com/Fato-Online/2016_02_17-invasao/blob/master/fonts/Stag-LightItalic.ttf') format('truetype');
         font-weight: 300;
         font-style: italic;
     }
